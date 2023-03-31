@@ -9,7 +9,7 @@ const TerserPlugin = require("terser-webpack-plugin"); // 对js进行压缩
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const CompressionPlugin = require("compression-webpack-plugin");
 
-const backend = "http://****:8080".replace(
+const backend = "http://106.14.248.48:8080".replace(
   '//+$/',
   '',
 );
