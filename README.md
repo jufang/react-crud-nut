@@ -89,4 +89,32 @@ export default rootModel({
 })
 
 ```
-# 页面crud 
+# 页面crud
+```js
+const Notice = () => {
+  return (
+    <CrudWrapper namespace="systemNotice" columns={columns}>
+      <CrudAdd>
+        <ModalForm/>
+      </CrudAdd>
+    </CrudWrapper>
+  );
+};
+
+```
+![页面list](https://github.com/jufang/react-crud-nut/blob/main/docs/img/readme1.jpg)
+![新增](https://github.com/jufang/react-crud-nut/blob/main/docs/img/readme2.jpg)
+
+
+![编辑](https://github.com/jufang/react-crud-nut/blob/main/docs/img/readme3.jpg)
+调用方式
+```js
+<CrudUpdate record={record} fetchByApi={false}>
+          <ModalForm/>
+        </CrudUpdate>
+```
+![删除](https://github.com/jufang/react-crud-nut/blob/main/docs/img/readme4.jpg)
+调用方式
+```js
+<CrudDel record={record} />
+```
